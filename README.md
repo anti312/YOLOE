@@ -1,4 +1,4 @@
-# YOLOE - You Only Look Once Efficient
+# YOLOE
 
 YOLOE is an efficient implementation of the YOLO (You Only Look Once) object detection model. It is designed to provide fast and accurate object detection in images and videos. YOLOE optimizes the original YOLO architecture to ensure better performance, especially in real-time applications. This model is capable of detecting multiple objects in images with a single forward pass, making it highly efficient for real-world applications.
 
