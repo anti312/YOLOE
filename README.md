@@ -1,25 +1,39 @@
 # YOLOE
 
-YOLOE is an efficient implementation of the YOLO (You Only Look Once) object detection model. It is designed to provide fast and accurate object detection in images and videos. YOLOE optimizes the original YOLO architecture to ensure better performance, especially in real-time applications. This model is capable of detecting multiple objects in images with a single forward pass, making it highly efficient for real-world applications.
+YOLOE è un'implementazione efficiente del modello YOLO (You Only Look Once) per il rilevamento di oggetti. È progettato per offrire un rilevamento veloce e preciso in immagini e video, ottimizzando l'architettura YOLO originale per garantire migliori prestazioni, specialmente nelle applicazioni in tempo reale. Questo modello è in grado di rilevare più oggetti nelle immagini con una singola passata, rendendolo estremamente efficiente per le applicazioni del mondo reale.
 
 ## Tutorial
 
-Follow the steps below to use the YOLOE model for object detection:
+Segui i passaggi sotto per utilizzare il modello YOLOE per il rilevamento di oggetti.
 
-### 1. Import the notebook on Google Colab
-To get started, import the notebook into your Google Colab environment by opening the notebook file (`.ipynb`) in your Google Drive.
+### 1. Importa il notebook su Google Colab
+Per iniziare, importa il notebook nel tuo ambiente Google Colab aprendo il file notebook (`.ipynb`) nel tuo Google Drive.
 
-### 2. Configure the classes you want to search for in the images
-In the configuration section of the notebook, specify the classes you want to detect.
+### 2. Configura le classi da rilevare nelle immagini
+Nella sezione di configurazione del notebook, specifica le classi che desideri rilevare.
 
-### 3. Upload the images to the `dataset` folder
-Create a folder named `dataset` in the Colab environment and upload all the images you want to analyze into this folder.
+### 3. Carica le immagini nella cartella `dataset`
+Crea una cartella chiamata `dataset` nell'ambiente Colab e carica tutte le immagini che vuoi analizzare in questa cartella.
 
-#### 3.1 Optional: To calculate the average IoU (Intersection over Union) across the entire dataset
-If you wish to calculate the average IoU for your dataset, create a subfolder inside the `dataset` folder named `annotations`. In this subfolder, upload the bounding boxes (bbox) for each image in YOLO format (xywhn).
+#### 3.1 Opzionale: Calcolare la media dell'IoU (Intersection over Union) su tutto il dataset
+Se desideri calcolare la media dell'IoU per il tuo dataset, crea una sottocartella dentro la cartella `dataset` chiamata `annotations`. In questa sottocartella, carica i bounding box (bbox) per ogni immagine nel formato YOLO (xywhn).
 
-### 4. Run the code
-Execute the code cells in the notebook to begin the object detection process. The model will process the images and detect objects based on the specified classes.
+### 4. Esegui il codice
+Esegui le celle di codice nel notebook per avviare il processo di rilevamento oggetti. Il modello elaborerà le immagini e rileverà gli oggetti in base alle classi specificate.
 
-### 5. View the results
-After the code completes, you can view the results, which will include the detected objects along with the corresponding bounding boxes on the images.
+### 5. Visualizza i risultati
+Una volta completato il processo, puoi visualizzare i risultati, che includeranno gli oggetti rilevati insieme ai rispettivi bounding box sulle immagini.
+
+---
+
+## Elaborazione Video
+
+Se desideri eseguire il rilevamento degli oggetti su un video segui questi passaggi.
+
+### 1. Configurazione del Video
+
+Imposta il percorso del video sorgente e il percorso per il video finale. Puoi anche definire l'altezza della timeline e una soglia di confidenza per il rilevamento degli oggetti.
+
+### 2. Esegui il codice
+
+Esegui la cella di codice nel notebook per rilevamento ggetti da uno stream video.
